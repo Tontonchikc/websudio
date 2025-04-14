@@ -12,6 +12,9 @@ body {
 }
 
 /* header */
+.header {
+padding-top: 24px;
+}
 
 .header-logo {
     color: #2196F3;
@@ -43,6 +46,7 @@ body {
 /* hero */
 .hero {
     background: #2F303A;
+    padding-top: 200px;
 }
 
 .hero-title {
@@ -68,6 +72,9 @@ background: #2196F3;
 }
 
 /* about */
+.about {
+    padding-top: 54px;
+}
 
 .about-title {
     color: #212121;
@@ -90,6 +97,10 @@ letter-spacing: 0.42px;
 
 /* doing */
 
+.doing {
+    padding-top: 118px;
+}
+
 .doing-title {
     color: #212121;
 text-align: center;
@@ -101,6 +112,10 @@ letter-spacing: 1.08px;
 }
 
 /* team */
+
+.team {
+    padding-top: 94px;
+}
 
 .team-title {
     color: #212121;
@@ -135,6 +150,7 @@ letter-spacing: 0.48px;
 /* footer */
 .footer {
     background: #2F303A;
+    padding-top: 60px;
 }
 
 .footer-logo {
