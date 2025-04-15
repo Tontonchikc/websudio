@@ -13,7 +13,12 @@ body {
 
 /* header */
 .header {
-padding-top: 24px;
+    padding-top: 24px;
+}
+
+.header-list {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .header-logo {
@@ -26,6 +31,17 @@ padding-top: 24px;
     letter-spacing: 0.78px;
 }
 
+.header-span {
+    color: #000;
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+    margin: 0 93px 0 0;
+}
+
 .header-link {
     color: #212121;
     font-size: 14px;
@@ -33,16 +49,18 @@ padding-top: 24px;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
+    margin: 0 50px 0 0;
 }
 
 .header-number {
-    color: #2196F3;
+    color: #757575;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
 }
+
 /* hero */
 .hero {
     background: #2F303A;
@@ -51,24 +69,24 @@ padding-top: 24px;
 
 .hero-title {
     color: #FFF;
-text-align: center;
-font-size: 44px;
-font-style: normal;
-font-weight: 900;
-line-height: 60px; 
-letter-spacing: 2.64px;
-text-transform: uppercase;
+    text-align: center;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
 }
 
 .hero-button {
     color: #FFF;
-text-align: center;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 30px; 
-letter-spacing: 0.96px;
-background: #2196F3;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    background: #2196F3;
 }
 
 /* about */
@@ -78,21 +96,21 @@ background: #2196F3;
 
 .about-title {
     color: #212121;
-font-size: 14px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.42px;
-text-transform: uppercase;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
 }
 
 .about-text {
     color: #757575;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; 
-letter-spacing: 0.42px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
 }
 
 /* doing */
@@ -103,12 +121,12 @@ letter-spacing: 0.42px;
 
 .doing-title {
     color: #212121;
-text-align: center;
-font-size: 36px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 1.08px;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
 }
 
 /* team */
@@ -119,38 +137,39 @@ letter-spacing: 1.08px;
 
 .team-title {
     color: #212121;
-text-align: center;
-font-size: 36px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 1.08px;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
 }
 
 .team-subtitle {
     color: #212121;
-text-align: center;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: 0.48px;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
 }
 
 .team-text {
     color: #757575;
-text-align: center;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.48px;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.48px;
 }
 
 /* footer */
 .footer {
     background: #2F303A;
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -165,30 +184,32 @@ letter-spacing: 0.48px;
 
 .footer-text {
     color: #FFF;
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 171.429% */
-letter-spacing: 0.42px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
 }
 
 .footer-email {
     color: rgba(255, 255, 255, 0.60);
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 171.429% */
-letter-spacing: 0.42px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 171.429% */
+    letter-spacing: 0.42px;
 }
 
 .footer-number {
     color: rgba(255, 255, 255, 0.60);
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 171.429% */
-letter-spacing: 0.42px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 171.429% */
+    letter-spacing: 0.42px;
 }
