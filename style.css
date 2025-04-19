@@ -17,9 +17,14 @@ body {
     padding-bottom: 25px;
 }
 
-.header-list {
-    display: flex;
-    flex-wrap: wrap;
+.header-span {
+    color: #2196F3;
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
 }
 
 .header-logo {
@@ -33,14 +38,16 @@ body {
     margin: 0 93px 0 0;
 }
 
-.header-span {
-    color: #2196F3;
-    font-family: Raleway;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.78px;
+.header-nav {
+    display: flex;
+    flex: wrap;
+}
+
+.header-list {
+    display: flex;
+    flex: wrap;
+    align-items: center;
+    gap: 50px;
 }
 
 .header-link {
@@ -50,7 +57,15 @@ body {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
-    margin: 0 50px 0 0;
+
+}
+
+.header-connection {
+    display: flex;
+    flex: wrap;
+    align-items: center;
+    margin-left: 344px;
+    gap: 50px;
 }
 
 .header-email {
@@ -60,7 +75,6 @@ body {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
-    margin: 0 50px 0 344px;
 }
 
 .header-number {
@@ -107,17 +121,21 @@ body {
     width: 216px;
     height: 50px;
     margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* about */
 .about {
     padding-top: 54px;
-    padding-bottom: 120px;
+    padding-bottom: 30px;
 }
 
 .about-list {
     display: flex;
     flex: wrap;
+    gap: 23px;
 }
 
 .about-title {
@@ -129,10 +147,7 @@ body {
     letter-spacing: 0.42px;
     text-transform: uppercase;
     width: 270px;
-}
-
-.about-item {
-    margin-left: 30px;
+    margin-bottom: 10px;
 }
 
 .about-text {
@@ -149,13 +164,13 @@ body {
 /* doing */
 
 .doing {
-    padding-top: 118px;
     padding-bottom: 94px;
 }
 
 .doing-list {
     display: flex;
     flex: wrap;
+    gap: 30px;
 }
 
 .doing-title {
@@ -173,7 +188,6 @@ body {
     width: 370px;
     height: 294px;
     flex-shrink: 0;
-    margin-right: 30px;
 }
 
 /* team */
@@ -192,13 +206,17 @@ body {
     line-height: normal;
     letter-spacing: 1.08px;
 }
-.team-list{
+
+.team-list {
     display: flex;
     flex: wrap;
+    gap: 30px;
 }
+
 .team-item {
     padding-bottom: 30px;
 }
+
 .team-img {
     width: 270px;
     height: 260px;
@@ -213,7 +231,7 @@ body {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.48px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .team-text {
@@ -225,7 +243,7 @@ body {
     line-height: normal;
     letter-spacing: 0.48px;
     margin-top: 10px;
-    
+
 }
 
 /* footer */
@@ -243,7 +261,6 @@ body {
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.78px;
-
 }
 
 .footer-span {
@@ -277,15 +294,14 @@ body {
     line-height: 24px;
     letter-spacing: 0.42px;
     margin-top: 9px;
+    margin-bottom: 9px;
 }
 
 .footer-number {
     color: rgba(255, 255, 255, 0.60);
-    font-family: Roboto;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.42px;
-
 }
