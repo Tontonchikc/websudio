@@ -1,3 +1,7 @@
+body {
+    font-family: "Roboto";
+}
+
 .container {
     width: 1200px;
     outline: solid red;
@@ -57,6 +61,16 @@
 
 }
 
+.header-link:hover {
+    color: #2196F3;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+
 .header-connection {
     display: flex;
     flex: wrap;
@@ -66,7 +80,18 @@
 }
 
 .header-email {
-    color: #212121;
+    color: #757575;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+
+.header-email:hover {
+    color: #2196F3;
+    font-family: Roboto;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -110,7 +135,13 @@
     height: 38px;
     flex-shrink: 0;
 }
-
+.hero-button:hover {
+    border-radius: 4px;
+    background: #2196F3;
+    color: #FFF;
+    
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+}
 .hero-gallery {
     display: flex;
     flex-wrap: wrap;

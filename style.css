@@ -60,6 +60,16 @@ body {
 
 }
 
+.header-link:hover {
+    color: #2196F3;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+
 .header-connection {
     display: flex;
     flex: wrap;
@@ -69,7 +79,18 @@ body {
 }
 
 .header-email {
-    color: #212121;
+    color: #757575;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+
+.header-email:hover {
+    color: #2196F3;
+    font-family: Roboto;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
