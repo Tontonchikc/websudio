@@ -109,7 +109,7 @@ body {
 
 /* hero */
 .hero {
-    background: #2F303A;
+    background-color: #2F303A;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(#000000, 10%), url(./images/gradient.webp);
@@ -159,6 +159,32 @@ body {
     display: flex;
     flex: wrap;
     gap: 23px;
+}
+
+.about-item {
+    height: 250px;
+    width: 285px;
+    background-size: 70px 70px;
+}
+
+.about-item:nth-child(1)::before {
+    content: "";
+    background-image: url("./images/antenna.png");
+}
+
+.about-item:nth-child(2)::before {
+    content: "";
+    background-image: url("./images/clock.png");
+}
+
+.about-item:nth-child(3)::before {
+    content: "";
+    background-image: url("./images/diagram.png");
+}
+
+.about-item:nth-child(4)::before {
+    content: "";
+    background-image: url("./images/astronaut.png");
 }
 
 .about-title {
