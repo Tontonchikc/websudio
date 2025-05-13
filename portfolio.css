@@ -135,18 +135,64 @@ body {
     height: 38px;
     flex-shrink: 0;
 }
+
 .hero-button:hover {
     border-radius: 4px;
     background: #2196F3;
     color: #FFF;
-    
     box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
+
 .hero-gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 50px;
+}
+
+.hero-element {
+    flex-grow: 404px;
+}
+
+.hero-element:nth-child(1) {
+    align-self: flex-start;
+}
+
+.hero-element:nth-child(2) {
+    align-self: flex-start;
+}
+
+.hero-element:nth-child(3) {
+    align-self: flex-start;
+}
+
+.hero-element:nth-child(4) {
+    align-self: center;
+}
+
+.hero-element:nth-child(5) {
+    align-self: center;
+}
+
+.hero-element:nth-child(6) {
+    align-self: center;
+}
+
+.hero-element:nth-child(7) {
+    align-self: flex-end;
+}
+
+.hero-element:nth-child(8) {
+    align-self: flex-end;
+}
+
+.hero-element:nth-child(9) {
+    align-self: flex-end;
+}
+
+.hero-element:hover {
+    box-shadow: 0px 5px 10px 2px;
+    flex-grow: 404px;
 }
 
 .hero-img {
