@@ -15,6 +15,7 @@ body {
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
+    list-style: 1px #ECECEC;
 }
 
 .header-span {
@@ -151,6 +152,8 @@ body {
 
 .hero-element {
     flex-basis: ((100% -(30px * 3)) / 3);
+    border: 1px solid #EEE;
+    background: #FFF;
 }
 
 
@@ -162,7 +165,6 @@ body {
 .hero-img {
     width: 370px;
     height: 294px;
-    flex-shrink: 0;
 }
 
 .hero-title {
