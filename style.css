@@ -111,7 +111,7 @@ body {
     background-color: #2F303A;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40) 10%), url("./images/gradient.webp");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40) 10%), url("./images/peoples_meeting.webp");
     background-repeat: no-repeat;
 }
 
@@ -164,33 +164,42 @@ body {
     height: 250px;
     width: 285px;
     background-size: 70px 70px;
+
+
 }
 
-.about-item::after {
-    background-size: 270px 120px;
+.about-item::before {
+    background-size: 70px 70px;
+    display: block;
+    height: 120px;
+    width: 270px;
+    background-repeat: no-repeat;
+    background-color: #F5F4FA;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-item:nth-child(1)::before {
     content: "";
-    background-image: url("./images/antenna.png");
+    background-image: url("./images/antenna.webp");
 }
 
 .about-item:nth-child(2)::before {
     content: "";
-    background-image: url("./images/clock.png");
+    background-image: url("./images/clock.webp");
 
 }
 
 .about-item:nth-child(3)::before {
     content: "";
-    background-image: url("./images/diagram.png");
-    
+    background-image: url("./images/diagram.webp");
+
 }
 
 .about-item:nth-child(4)::before {
     content: "";
-    background-image: url("./images/astronaut.png");
-     
+    background-image: url("./images/astronaut.webp");
+
 }
 
 .about-title {
