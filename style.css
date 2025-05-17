@@ -175,8 +175,7 @@ body {
     width: 270px;
     background-repeat: no-repeat;
     background-color: #F5F4FA;
-    margin-left: auto;
-    margin-right: auto;
+    background-position: center;
 }
 
 .about-item:nth-child(1)::before {
@@ -229,6 +228,7 @@ body {
 
 .doing {
     padding-bottom: 94px;
+    background: #FFF;
 }
 
 .doing-list {
@@ -259,6 +259,7 @@ body {
 .team {
     padding-top: 94px;
     padding-bottom: 94px;
+    background: #F5F4FA;
 }
 
 .team-title {
