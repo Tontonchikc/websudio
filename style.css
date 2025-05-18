@@ -106,6 +106,15 @@ body {
     letter-spacing: 0.28px;
 }
 
+.header-number:hover {
+    color: #2196F3;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+
 /* hero */
 .hero {
     background-color: #2F303A;
