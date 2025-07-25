@@ -101,7 +101,7 @@ body {
 }
 
 .header-svg {
-   fill: #757575;
+    fill: #757575;
 
 }
 
@@ -109,19 +109,19 @@ body {
     fill: #2196F3;
 }
 
-.header-svg-envelope:hover > .header-email {
+.header-svg-envelope:hover>.header-email {
     color: #2196F3;
 }
 
-.header-think:hover > .header-svg-envelope  {
-   fill: #2196F3;
+.header-think:hover>.header-svg-envelope {
+    fill: #2196F3;
 }
 
-.header-think:hover > .header-svg-smartphone  {
-   fill: #2196F3;
+.header-think:hover>.header-svg-smartphone {
+    fill: #2196F3;
 }
 
-.header-svg-envelope:hover > .header-number {
+.header-svg-envelope:hover>.header-number {
     color: #2196F3;
 }
 
@@ -294,6 +294,10 @@ body {
     gap: 30px;
 }
 
+.doing-item {
+    position: relative;
+}
+
 .doing-title {
     color: #212121;
     text-align: center;
@@ -307,8 +311,29 @@ body {
 
 .doing-img {
     width: 370px;
-    height: 294px;
+}
+
+.doing-text {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+
+    background-color: rgba(47, 48, 58, 0.80);
+    width: 370px;
+    height: 70px;
     flex-shrink: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
 }
 
 /* team */
@@ -454,6 +479,11 @@ body {
     padding-bottom: 60px;
 }
 
+.footer-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .footer-logo {
     color: #FFF;
     font-family: Raleway;
@@ -506,4 +536,51 @@ body {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.42px;
+}
+
+.footer-link {
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+.footer-link:hover {
+    background-color: #2196F3;
+}
+
+.footer-join {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer-socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+
+}
+
+.footer-svg {
+    width: 44px;
+    height: 44px;
+    fill: #FFFFFF;
+    padding: 12px 12px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
 }
