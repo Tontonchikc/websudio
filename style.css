@@ -750,7 +750,7 @@ body {
 }
 
 
-.modal-input:focus {
+.modal-input:hover {
     border: 1px solid #2196F3;
 }
 
