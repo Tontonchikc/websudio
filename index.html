@@ -66,7 +66,7 @@
     <section class="hero">
       <div class="container">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="hero-button">Замовити послугу</button>
+        <button data-modal-open type="button" class="hero-button ">Замовити послугу</button>
       </div>
     </section>
     <!--Про нас-->
@@ -108,16 +108,16 @@
         <ul class="doing-list">
           <li class="doing-item">
             <img src="./images/writing-code.webp" alt="Написання коду" class="doing-img">
-           <p class="doing-text">Десктопні додатки</p>
+            <p class="doing-text">Десктопні додатки</p>
           </li>
           <li class="doing-item">
             <img src="./images/choosing-the-site-view-on-your-phone.webp" alt="Вибір вигляду сайту на телефоні"
               class="doing-img" />
-               <p class="doing-text">Мобільні додатки</p>
+            <p class="doing-text">Мобільні додатки</p>
           </li>
           <li class="doing-item">
             <img src="./images/choice-of-color.webp" alt="Вибір кольору" class="doing-img" />
-             <p class="doing-text">Дизайнерські рішення</p>
+            <p class="doing-text">Дизайнерські рішення</p>
           </li>
         </ul>
       </div>
@@ -354,6 +354,53 @@
       </div>
     </div>
   </footer>
+  <section class="modal-section">
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+
+        <button class="modal-close-button">
+          <svg data-modal-close class="modal-close">
+            <use href="./images/icons2.svg#icon-close-button"></use>
+          </svg>
+        </button>
+        <h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
+        <form action="" class="modal-form">
+          <p class="modal-text">Ім'я</p>
+          <label for="" class="modal-label">
+            <svg class="modal-svg-person">
+              <use href="./images/icons2.svg#icon-person" class=""></use>
+            </svg>
+            <input type="text" class="modal-person modal-input">
+          </label>
+          <p class="modal-text">Телефон</p>
+          <label for="" class="modal-label">
+            <svg class="modal-svg-person">
+              <use href="./images/icons2.svg#icon-number" class=""></use>
+            </svg>
+            <input type="tel" class="modal-number modal-input">
+          </label>
+          <p class="modal-text">Пошта</p>
+          <label for="" class="modal-label">
+            <svg class="modal-svg-person">
+              <use href="./images/icons2.svg#icon-email" class=""></use>
+            </svg>
+            <input type="email" class="modal-email modal-input">
+          </label>
+          <p class="modal-text"></p>
+          <label for="" class="modal-label">
+            <input type="tel" class="modal-comment " placeholder="Введіть текст">
+          </label>
+          <label for="" class="modal-label">
+            <input type="checkbox" class="modal-checkbox"> 
+          </label>
+          <p class="modal-text-agreement">Погоджуюся з розсилкою та приймаю <a href="" class="modal-agreement">Умови договору</a>
+          </p>
+          <button class="modal-button" type="submit">Відправити</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="./modal.js"></script>
 </body>
 
 </html>
