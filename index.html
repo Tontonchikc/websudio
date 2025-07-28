@@ -352,6 +352,19 @@
           </li>
         </ul>
       </div>
+      <div class="footer-box">
+        <h4 class="footer-title">Підпишіться на розсилку</h4>
+        <form action="" class="footer-form">
+          <label for="" class="footer-label">
+            <input type="email" class="footer-input" required placeholder="E-mail">
+          </label>
+      </div>
+      <button class="footer-button">
+        Підписатися <svg class="footer-subscribe">
+          <use href="./images/icons2.svg#icon-subscribe"></use>
+        </svg>
+      </button>
+      </form>
     </div>
   </footer>
   <section class="modal-section">
@@ -370,31 +383,35 @@
             <svg class="modal-svg-person">
               <use href="./images/icons2.svg#icon-person" class=""></use>
             </svg>
-            <input type="text" class="modal-person modal-input">
+            <input type="text" class="modal-person modal-input" required>
           </label>
           <p class="modal-text">Телефон</p>
           <label for="" class="modal-label">
             <svg class="modal-svg-person">
-              <use href="./images/icons2.svg#icon-number" class=""></use>
+              <use href="./images/icons2.svg#icon-number" class="" required></use>
             </svg>
             <input type="tel" class="modal-number modal-input">
           </label>
           <p class="modal-text">Пошта</p>
           <label for="" class="modal-label">
             <svg class="modal-svg-person">
-              <use href="./images/icons2.svg#icon-email" class=""></use>
+              <use href="./images/icons2.svg#icon-email" class="" required></use>
             </svg>
-            <input type="email" class="modal-email modal-input">
+            <input type="email" class="modal-email modal-input" required>
           </label>
           <p class="modal-text"></p>
+
           <label for="" class="modal-label">
-            <input type="tel" class="modal-comment " placeholder="Введіть текст">
+            <input type="tel" class="modal-comment " placeholder="Введіть текст" required>
           </label>
-          <label for="" class="modal-label">
-            <input type="checkbox" class="modal-checkbox"> 
-          </label>
-          <p class="modal-text-agreement">Погоджуюся з розсилкою та приймаю <a href="" class="modal-agreement">Умови договору</a>
-          </p>
+          <div class="modal-box">
+            <label for="" class="modal-label">
+              <input type="checkbox" class="modal-checkbox" required>
+            </label>
+            <p class="modal-text-agreement">Погоджуюся з розсилкою та приймаю <a href="" class="modal-agreement">Умови
+                договору</a>
+            </p>
+          </div>
           <button class="modal-button" type="submit">Відправити</button>
         </form>
       </div>

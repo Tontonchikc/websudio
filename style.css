@@ -585,6 +585,67 @@ body {
     margin-left: 70px;
 }
 
+
+
+.footer-title {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+.footer-form {
+    display: flex;
+    align-items: center;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 105px;
+}
+
+.footer-input {
+    width: 358px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: rgba(33, 150, 243, 0.00);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.footer-button {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+
+    border-radius: 4px;
+    background: #2196F3;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    width: 200px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+.footer-subscribe {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    fill: #FFFFFF;
+}
+
+/* modal */
+
 .backdrop {
     background: rgba(0, 0, 0, 0.20);
     position: fixed;
@@ -604,13 +665,14 @@ body {
     width: 528px;
     height: 581px;
     position: relative;
+    padding: 40px 40px 40px 40px;
+    border-radius: 4px;
 }
 
 .modal-close-button {
     position: absolute;
-    top: 0;
-    right: 0;
-    /* z-index: 2; */
+    top: 8px;
+    right: 8px;
 }
 
 .modal-close {
@@ -632,6 +694,7 @@ body {
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.6px;
+    margin-bottom: 12px;
 }
 
 .modal-text {
@@ -642,6 +705,8 @@ body {
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.12px;
+    margin-bottom: 4px;
+    margin-top: 10px;
 }
 
 .modal-comment {
@@ -661,11 +726,23 @@ body {
     flex-shrink: 0;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.20);
+}
 
+.modal-input:focus {
+    border: 1px solid #2196F3;
 }
 
 .modal-comment::placeholder {
     text-align: start;
+}
+
+
+
+.modal-checkbox {
+    width: 16px;
+    height: 15px;
+    flex-shrink: 0;
+    color: #212121;
 }
 
 .modal-text-agreement {
@@ -694,6 +771,14 @@ body {
     text-underline-position: from-font;
 }
 
+.modal-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
 .modal-button {
     border-radius: 4px;
     background: #2196F3;
@@ -709,8 +794,15 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 30px;
-    /* 187.5% */
     letter-spacing: 0.96px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.modal-button:hover {
+    background-color: #188CE8;
+
 }
 
 .modal-svg-person {
