@@ -15,6 +15,7 @@ body {
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header-span {
@@ -57,7 +58,7 @@ body {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
-
+    position: relative;
 }
 
 .header-link:hover {
@@ -70,6 +71,28 @@ body {
     letter-spacing: 0.28px;
 }
 
+.header-link::after {
+    content: "";
+    height: 4px;
+    border-radius: 2px;
+    background: #2196F3;
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+}
+
+.header-link:nth-child(1):after {
+    width: 48px;
+}
+
+.header-link:nth-child(2)::after {
+    width: 78px;
+}
+
+.header-link:hover::after {
+    display: block;
+}
 
 
 .header-connection {
@@ -214,7 +237,7 @@ body {
     border: 1px solid #EEE;
     background: #FFF;
     padding-bottom: 20px;
-
+    position: relative;
 }
 
 .hero-content {
@@ -250,6 +273,42 @@ body {
     line-height: 30px;
     letter-spacing: 0.48px;
     margin-bottom: 20px;
+}
+
+.hero-box {
+    outline: solid red;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 294px;
+    padding: 64px 23px;
+    opacity: 0;
+    background-color: rgba(33, 150, 243, 0.90);
+}
+
+.hero-overlay:hover {
+    opacity: 1;
+}
+
+.hero-overlay-text {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.54px;
+}
+
+.hero-element:hover>.hero-overlay {
+    opacity: 1;
 }
 
 /* footer */
