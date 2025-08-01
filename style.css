@@ -80,14 +80,17 @@ body {
     position: absolute;
     top: 45px;
     left: 0;
+    width: 100%;
 }
 
 .header-link:nth-child(1):after {
     width: 48px;
+    width: 100%;
 }
 
 .header-link:nth-child(2)::after {
     width: 78px;
+    width: 100%;
 }
 
 .header-link:hover::after {
@@ -781,7 +784,7 @@ body {
 }
 
 .modal-comment::placeholder {
-   padding: 16px 12px;
+    padding: 16px 12px;
 }
 
 
