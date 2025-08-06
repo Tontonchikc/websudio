@@ -51,7 +51,10 @@ body {
     gap: 50px;
 }
 
-.header-link {
+
+
+.header-studio,
+.header-contacts {
     color: #212121;
     font-size: 14px;
     font-style: normal;
@@ -61,7 +64,7 @@ body {
     position: relative;
 }
 
-.header-link:hover {
+.header-portfolio {
     color: #2196F3;
     font-family: Roboto;
     font-size: 14px;
@@ -69,9 +72,25 @@ body {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
+    position: relative;
 }
 
-.header-link::after {
+.header-studio:hover,
+.header-contacts:hover {
+    color: #2196F3;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    transition-duration: 250ms;
+    transition-property: background-color, color, fill, border;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-studio::after,
+.header-contacts::after {
     content: "";
     height: 4px;
     border-radius: 2px;
@@ -80,19 +99,32 @@ body {
     position: absolute;
     top: 45px;
     left: 0;
+    width: 100%;
 }
 
-.header-link:nth-child(1):after {
-    width: 48px;
-}
-
-.header-link:nth-child(2)::after {
-    width: 78px;
-}
-
-.header-link:hover::after {
+.header-portfolio::after {
+    content: "";
+    height: 4px;
+    border-radius: 2px;
+    background: #2196F3;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 72px;
     display: block;
+
+
 }
+
+.header-studio:hover::after,
+.header-contacts:hover::after {
+    display: block;
+    transition-duration: 250ms;
+    transition-property: background-color, color, fill, border;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(100%, 100%);
+}
+
 
 
 .header-connection {
@@ -112,6 +144,9 @@ body {
 
 .header-think:hover {
     color: #2196F3;
+    transition-duration: 250ms;
+    transition-property: background-color, color, fill, border;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-svg-envelope {
@@ -131,22 +166,37 @@ body {
 
 .header-svg-envelope:hover {
     fill: #2196F3;
+    transition-duration: 250ms;
+    transition-property: background-color, color, fill, border;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-svg-envelope:hover>.header-email {
     color: #2196F3;
+    transition-duration: 250ms;
+    transition-property: background-color, color, fill, border;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-think:hover>.header-svg-envelope {
     fill: #2196F3;
+    transition-duration: 250ms;
+    transition-property: background-color, color, fill, border;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-think:hover>.header-svg-smartphone {
     fill: #2196F3;
+    transition-duration: 250ms;
+    transition-property: background-color, color, fill, border;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-svg-envelope:hover>.header-number {
     color: #2196F3;
+    transition-duration: 250ms;
+    transition-property: background-color, color, fill, border;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-email {
@@ -167,6 +217,9 @@ body {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
+    transition-duration: 250ms;
+    transition-property: background-color, color, fill, border;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-number {
@@ -185,6 +238,9 @@ body {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
+    transition-duration: 250ms;
+    transition-property: background-color, color, fill, border;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* hero */
@@ -223,6 +279,9 @@ body {
     background: #2196F3;
     color: #FFF;
     box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+    transition-duration: 250ms;
+    transition-property: background-color, color, fill, border, box-shadow;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-gallery {
@@ -246,6 +305,9 @@ body {
 
 .hero-element:hover {
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    transition-duration: 250ms;
+    transition-property: background-color, color, fill, border;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-img {
@@ -295,6 +357,9 @@ body {
 
 .hero-overlay:hover {
     opacity: 1;
+    transition-duration: 250ms;
+    transition-property: background-color, color, fill, border;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-overlay-text {
@@ -389,6 +454,9 @@ body {
 
 .footer-link:hover {
     background-color: #2196F3;
+    transition-duration: 250ms;
+    transition-property: background-color, color, fill, border;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-join {
