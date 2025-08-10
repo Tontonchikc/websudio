@@ -10,6 +10,9 @@ body {
     padding-right: 15px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 /* header */
 .header {
@@ -337,12 +340,6 @@ body {
     margin-bottom: 20px;
 }
 
-.hero-box {
-    outline: solid red;
-    position: relative;
-    overflow: hidden;
-
-}
 
 .hero-overlay {
     position: absolute;
@@ -353,13 +350,14 @@ body {
     padding: 64px 23px;
     opacity: 0;
     background-color: rgba(33, 150, 243, 0.90);
+    transition-property: opacity, transform;
+    transition-duration: 300ms;
+    transform: translate(0, 150px);
 }
 
 .hero-overlay:hover {
     opacity: 1;
-    transition-duration: 250ms;
-    transition-property: background-color, color, fill, border;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translate(0, 0);
 }
 
 .hero-overlay-text {
@@ -374,6 +372,7 @@ body {
 
 .hero-element:hover>.hero-overlay {
     opacity: 1;
+    transform: translate(0, 0);
 }
 
 /* footer */

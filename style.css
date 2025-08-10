@@ -10,6 +10,10 @@ body {
     padding-right: 15px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* header */
 .header {
     padding-top: 24px;
@@ -755,6 +759,8 @@ body {
 
 /* modal */
 
+
+
 .backdrop {
     background: rgba(0, 0, 0, 0.20);
     position: fixed;
@@ -776,6 +782,14 @@ body {
     position: relative;
     padding: 40px 40px 40px 40px;
     border-radius: 4px;
+    transform: scale(1) translate(0, 0);
+    transition-property: transform, opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden .modal {
+    transform: scale(0.5) translate(0, 500px)
 }
 
 .modal-close-button {
@@ -795,10 +809,6 @@ body {
 
 .modal-close:hover {
     fill: #2196F3;
-
-    transition-duration: 250ms;
-    transition-property: background-color, color, fill, border;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -940,5 +950,6 @@ body {
 }
 
 .is-hidden {
-    display: none;
+    opacity: 0;
+    pointer-events: none;
 }
